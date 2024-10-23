@@ -8,7 +8,7 @@ char  *ft_strnstr(const char *big, const char *little, size_t len)
   i = 0;
   l = 0;
   if (little == 0)
-    return ((char *)&big[0]);
+    return ((char *)big);
   while (big[i] && i < len)
   {
     if (big[i] == *little)
