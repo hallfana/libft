@@ -10,9 +10,9 @@ char  *ft_substr(char const *s, unsigned int start, size_t len)
   j = 0;
   if (start > ft_strlen(s))
     str = (char*)malloc(sizeof(char));
-  if (len < (ft_strlen(s) - start))
+  else if (len < (ft_strlen(s) - start))
     str = (char*)malloc(sizeof(char)*(len+1));
-  else
+  else if
     str = (char*)malloc(sizeof(char)*(ft_strlen(s)-start+1));
   if (!str)
     return (NULL);
