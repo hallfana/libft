@@ -20,7 +20,7 @@ char  *strnstr(const char *big, const char *little, size_t len)
       little -= l;
       l = 0;
     }
-    if (l == (ft_strlen(l) - 1))
+    if (l == (ft_strlen(little) - 1))
       return (big[i - l]);
     i++;
   }
