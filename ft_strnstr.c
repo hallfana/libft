@@ -21,7 +21,7 @@ char  *strnstr(const char *big, const char *little, size_t len)
       l = 0;
     }
     if (l == (ft_strlen(little) - 1))
-      return ((char *)big[i - l]);
+      return ((char *)&big[i - l]);
     i++;
   }
   return (NULL);
