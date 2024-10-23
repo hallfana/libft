@@ -16,6 +16,6 @@ size_t  strlcat(char *dst, const char *src, size_t dsize)
     dst[swdst] = src[i];
     i++;
   }
-  dst[swsrc + i] = '\0';
-  return (len + swsrc);
+  dst[swdst + i] = '\0';
+  return (swdst + swsrc);
 }
