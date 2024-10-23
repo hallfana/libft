@@ -13,7 +13,7 @@ char  *ft_strnstr(const char *big, const char *little, size_t len)
     return(ft_strnstr(big, little, ft_strlen(big)));
   if (len == 1 && big[0] == little[0])
     return ((char *)big);
-  while (big[i] && i < len)
+  while (big[i] && i < len - 1)
   {
     if (big[i] == *little)
     {
