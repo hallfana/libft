@@ -4,6 +4,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 
+
 void  ft_bzero(void *s, size_t n);
 void  *ft_memccpy(void  *dest, const void *src, int c, size_t n);
 void  *ft_memchr(const void *s, int c, size_t n);
