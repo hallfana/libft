@@ -2,8 +2,8 @@
 
 void *ft_calloc(size_t nmemb, size_t size)
 {
-  void  *ptr;
-  int   i;
+  void    *ptr;
+  size_t  i;
 
   if (nmemb * size >= 2147483647 || ((int)nmemb < 0 && (int)size < 0))
     return (NULL);
