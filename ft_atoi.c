@@ -2,9 +2,9 @@
 
 int ft_atoi(const char *ptr)
 {
-  long  i;
-  long  sign;
-  long  r;
+  long long i;
+  long long sign;
+  long long r;
 
   i = 0;
   sign = 1;
