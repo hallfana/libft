@@ -11,9 +11,10 @@ int ft_atoi(const char *ptr)
   r = 1;
   while (ptr[i] && ((ptr[i] >= 9 || ptr[i] <= 13) || ptr[i] == ' '))
     i++;
-  if (ptr[i] && ptr[i] == '-')
+  if (ptr[i] && (ptr[i] == '-' || ptr[i] == '+'))
   {
-    sign *= -1;
+    if (ptr[i] == '-')
+      sign *= -1;
     i++;
   }
   while (ptr[i] && (ptr[i] >= '0' && ptr[i] <= '9'))
