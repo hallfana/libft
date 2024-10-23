@@ -7,9 +7,9 @@ char  *ft_substr(char const *s, unsigned int start, size_t len)
   char    *str;
 
   if (ft_strlen(s) > len)
-    str = (char*)malloc(sizeof(*s) * (len));
+    str = (char*)malloc(sizeof(*s) * (len + 1));
   else
-    str = (char*)malloc(sizeof(*s) * (ft_strlen(s)));  
+    str = (char*)malloc(sizeof(*s) * (ft_strlen(s) + 1));  
   if (!str)
     return (NULL);
   i = 0;
@@ -23,6 +23,6 @@ char  *ft_substr(char const *s, unsigned int start, size_t len)
     }
     i++;
   }
-  //str[j] = 0;
+  str[j] = 0;
   return (str);
 }
