@@ -10,12 +10,12 @@ size_t  ft_strlcpy(char *dst, const char *src, size_t dsize)
   i = 0;
   if ((int)dsize < 0)
   {
-    i = 0;
-    while (i < (ft_strlen(src) - 1))
+    while (src[i])
     {
       dst[i] = src[i];
       i++;
     }
+    dst[i] = 0;
     return (ft_strlen(src));
   }
   swdst = dsize;
