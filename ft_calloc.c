@@ -14,7 +14,7 @@ void *ft_calloc(size_t nmemb, size_t size)
   }
   i = 0;
   ptr = malloc(nmemb * size);
-  while (i <= (nmemb * size))
+  while (i < (nmemb * size))
   {
     ((char *)ptr)[i] = 0;
     i++;
