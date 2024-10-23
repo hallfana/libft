@@ -9,14 +9,15 @@ char  *ft_strnstr(const char *big, const char *little, size_t len)
   l = 0;
   if (ft_strlen(little) == 0)
     return ((char *)big);
-  while (big[i] && i <= len)
+  while (big[i] && i < len)
   {
     if (big[i] == *little)
     {
       l++;
       little++;
     }
-    else {
+    else
+    {
       little -= l;
       l = 0;
     }
