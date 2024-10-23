@@ -6,22 +6,23 @@ char  *ft_substr(char const *s, unsigned int start, size_t len)
   size_t  j;
   char    *str;
 
-  if (ft_strlen(s) > len)
-    str = (char*)malloc(sizeof(*s) * (len));
-  else
-    str = (char*)malloc(sizeof(*s) * (ft_strlen(s)));  
-  if (!str)
-    return (NULL);
   i = 0;
   j = 0;
-  while (s[i])
+  if (len < (ft_strlen(s) - start))
+    str = (char*)malloc(sizeof(char)*(len+1));
+  else
+    str = (char*)malloc(sizeof(char)*(ft_strlen(s)-start+1));
+  if (!str)
+    return (NULL);
+  while(s[i])
   {
-    if (i >= start && j < len)
+    if (i > start && j < len)
     {
       str[j] = s[i];
       j++;
     }
     i++;
   }
+  str[j] = 0;
   return (str);
 }
