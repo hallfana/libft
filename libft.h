@@ -4,7 +4,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 
-# define long SIZE_MAX 18446744073709551615
+# define SIZE_MAX 18446744073709551615
 
 void  ft_bzero(void *s, size_t n);
 void  *ft_memccpy(void  *dest, const void *src, int c, size_t n);
