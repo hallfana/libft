@@ -26,6 +26,6 @@ size_t  ft_strlcpy(char *dst, const char *src, size_t dsize);
 size_t  ft_strlcat(char *dst, const char *src, size_t dsize);
 char  *ft_strnstr(const char *big, const char *little, size_t len);
 int ft_atoi(const char *ptr);
-void *calloc(size_t nmemb, size_t size);
+void *ft_calloc(size_t nmemb, size_t size);
 
 #endif
