@@ -7,7 +7,7 @@ char  *ft_strnstr(const char *big, const char *little, size_t len)
 
   i = 0;
   l = 0;
-  if (len < 0)
+  if ((int)len < 0)
     return ((char *)&big++);
   if (ft_strlen(little) == 0)
     return ((char *)big);
