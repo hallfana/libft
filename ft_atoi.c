@@ -8,7 +8,7 @@ int ft_atoi(const char *ptr)
 
   i = 0;
   sign = 1;
-  r = 1;
+  r = 0;
   while (ptr[i] && ((ptr[i] >= 9 || ptr[i] <= 13) || ptr[i] == ' '))
     i++;
   if (ptr[i] && (ptr[i] == '-' || ptr[i] == '+'))
