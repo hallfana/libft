@@ -16,6 +16,9 @@ clean :
 fclean : clean
 	rm -rf $(OBJ)
 
+dev:
+	make fclean;git add .; git commit -m 'auto update';git push;cd ../tester; make m;cd ../libft
+
 re : fclean all
 
-.PHONY : all clean fclean re mclean
+.PHONY : all clean fclean re mclean dev
