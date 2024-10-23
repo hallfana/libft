@@ -23,5 +23,6 @@ char  *ft_strnstr(const char *big, const char *little, size_t len)
     }
     i++;
   }
+  write(1, "STRING", 6);
   return (NULL);
 }
