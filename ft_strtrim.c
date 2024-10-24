@@ -25,7 +25,7 @@ char  *ft_strtrim(char const *s, char const *charset)
   while (s[--j] && ft_incharset(s[j], charset) == 1);
   printf("\nfound char from charset at pos i:%d j:%d len:%d in %s\n", i, j, j-i,s);
   printf("got result: %s\n", ft_substr(s, i + 1, j - i));
-  return (ft_substr(s, i + 1, j - i));
+  return (ft_substr(s, i, j - i));
 }
 
 /*int main(int argc, char **argv)
