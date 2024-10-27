@@ -1,4 +1,4 @@
-#include "./libft.h"
+#include "libft.h"
 
 int ft_incharset(const int c, const char *charset)
 {
