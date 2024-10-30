@@ -26,9 +26,10 @@ int ft_countwords(char const *s, int c)
 
 char  **ft_split(char const *s, char c)
 {
-  (void*)s;
+  (void)s;
   (void)c;
   printf("%d", ft_countwords("asdasda*sd*", (int)'*'));
+  return NULL;
 }
 
 int main(void)
