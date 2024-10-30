@@ -7,6 +7,9 @@ int ft_countwords(char const *s, int c)
   int j;
   int in;
 
+  i = 0;
+  j = 0;
+  in = 0;
   while (s[i])
   {
     if (s[i] != (char)c && in != 1)
@@ -23,6 +26,8 @@ int ft_countwords(char const *s, int c)
 
 char  **ft_split(char const *s, char c)
 {
+  (void*)s;
+  (void)c;
   printf("%d", ft_countwords("asdasda*sd*", (int)'*'));
 }
 
