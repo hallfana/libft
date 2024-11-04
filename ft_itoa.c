@@ -6,7 +6,7 @@
 /*   By: samberna <samberna@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 19:02:04 by samberna          #+#    #+#             */
-/*   Updated: 2024/11/04 23:06:58 by samberna         ###   ########.fr       */
+/*   Updated: 2024/11/04 23:07:13 by samberna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ size_t  count_nb(long long nb)
 char    *ft_itoa(int n)
 {
     char        *nbr;
-    size_t      i;
+    long        i;
     long long   nr;
 
     nr = n;
