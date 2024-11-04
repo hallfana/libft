@@ -47,6 +47,7 @@ char  **ft_split(char const *str, char c)
     s = e;
     i++;
   }
+  dst[i] = 0;
   return (dst);
 }
 
