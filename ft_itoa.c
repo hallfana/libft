@@ -6,7 +6,7 @@
 /*   By: samberna <samberna@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 19:02:04 by samberna          #+#    #+#             */
-/*   Updated: 2024/11/04 23:03:10 by samberna         ###   ########.fr       */
+/*   Updated: 2024/11/04 23:06:11 by samberna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ char    *ft_itoa(int n)
     i = count_nb(nr);
     while (i != 0)
     {
-        nbr[i] = n % 10;
+        nbr[i] = nr % 10;
         nr = nr / 10;
         i--;
     }
