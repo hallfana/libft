@@ -6,7 +6,7 @@
 /*   By: samberna <samberna@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 19:02:04 by samberna          #+#    #+#             */
-/*   Updated: 2024/11/04 23:15:53 by samberna         ###   ########.fr       */
+/*   Updated: 2024/11/04 23:17:20 by samberna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,9 @@ char    *ft_itoa(int n)
     if (!nbr)
         return (NULL);
     i = count_nb(nr);
+    if (nr < 0)
+        nbr[0] = '-';
+    i++;
     while (i > 0)
     {
         //printf("%c, %d\n", (nr % 10) + '0', i - 1);
