@@ -6,15 +6,15 @@
 /*   By: samberna <samberna@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 19:02:04 by samberna          #+#    #+#             */
-/*   Updated: 2024/11/04 23:07:13 by samberna         ###   ########.fr       */
+/*   Updated: 2024/11/04 23:15:28 by samberna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t  count_nb(long long nb)
+int  count_nb(long long nb)
 {
-    size_t      count;
+    int      count;
 
     count = 0;
     if (nb < 0)
@@ -33,20 +33,29 @@ size_t  count_nb(long long nb)
 char    *ft_itoa(int n)
 {
     char        *nbr;
-    long        i;
+    long long   i;
     long long   nr;
 
+    printf("count_nb: %d\n", count_nb(n));
     nr = n;
     nbr = (char*)malloc(sizeof(char) * (count_nb(nr) + 1));
     if (!nbr)
         return (NULL);
     i = count_nb(nr);
-    while (i < 0)
+    while (i > 0)
     {
-        nbr[i] = nr % 10;
+        printf("%c, %d\n", (nr % 10) + '0', i - 1);
+        nbr[i - 1] = (nr % 10) + '0';
         nr = nr / 10;
         i--;
     }
-    nbr[count_nb(nr) + 1] = '\0';
+    //nbr[count_nb(nr)] = 'j';
     return (nbr);
+}
+
+#include <stdio.h>
+int main(int nigger, char** nigger_arr)
+{
+    printf("%s\n", ft_itoa(56425465));
+    return 0;
 }
