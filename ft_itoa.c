@@ -6,7 +6,7 @@
 /*   By: samberna <samberna@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 19:02:04 by samberna          #+#    #+#             */
-/*   Updated: 2024/11/04 22:54:42 by samberna         ###   ########.fr       */
+/*   Updated: 2024/11/04 23:00:14 by samberna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,12 +40,13 @@ char    *ft_itoa(int n)
     nbr = (char*)malloc(sizeof(char) * (count_nb(n) + 1));
     if (!nbr)
         return (NULL);
-    i = count_nb(n);
+    i = count_nb(n) - 1;
     while (i != 0)
     {
         nbr[i] = n % 10;
         n = n / 10;
         i--;
     }
+    nbr[count_nb(n)] = '\0';
     return (nbr);
 }
