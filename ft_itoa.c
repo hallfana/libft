@@ -6,7 +6,7 @@
 /*   By: samberna <samberna@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 19:02:04 by samberna          #+#    #+#             */
-/*   Updated: 2024/11/04 23:15:28 by samberna         ###   ########.fr       */
+/*   Updated: 2024/11/04 23:15:42 by samberna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,10 +52,10 @@ char    *ft_itoa(int n)
     //nbr[count_nb(nr)] = 'j';
     return (nbr);
 }
-
+/*
 #include <stdio.h>
 int main(int nigger, char** nigger_arr)
 {
     printf("%s\n", ft_itoa(56425465));
     return 0;
-}
+}*/
