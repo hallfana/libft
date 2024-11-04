@@ -41,11 +41,11 @@ char  **ft_split(char const *str, char c)
   {
     while (str[s] == c)
       s++;
-    e = s;
+    e = s + 1;
     while (str[e] != c)
       e++;
     dst[i] = ft_strndup(str, e - s);
-    s = e + 1;
+    s = e;
     i++;
   }
   return (dst);
