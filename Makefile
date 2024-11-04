@@ -21,4 +21,4 @@ dev:
 
 re : fclean all
 
-.PHONY : all clean fclean re mclean dev
+.PHONY : all clean fclean re dev
