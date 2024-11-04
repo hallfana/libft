@@ -6,7 +6,7 @@
 /*   By: samberna <samberna@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 19:02:04 by samberna          #+#    #+#             */
-/*   Updated: 2024/11/04 23:00:41 by samberna         ###   ########.fr       */
+/*   Updated: 2024/11/04 23:02:12 by samberna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 size_t  count_nb(int nb)
 {
-    size_t count;
-    long        n;
+    size_t      count;
+    long long   n;
 
     count = 0;
     n = nb;
@@ -34,19 +34,21 @@ size_t  count_nb(int nb)
 
 char    *ft_itoa(int n)
 {
-    char    *nbr;
-    size_t  i;
+    char        *nbr;
+    size_t      i;
+    long long   nr;
 
-    nbr = (char*)malloc(sizeof(char) * (count_nb(n) + 1));
+    nr = n;
+    nbr = (char*)malloc(sizeof(char) * (count_nb(nr) + 1));
     if (!nbr)
         return (NULL);
-    i = count_nb(n);
+    i = count_nb(nr);
     while (i != 0)
     {
         nbr[i] = n % 10;
-        n = n / 10;
+        nr = nr / 10;
         i--;
     }
-    nbr[count_nb(n) + 1] = '\0';
+    nbr[count_nb(nr) + 1] = '\0';
     return (nbr);
 }
