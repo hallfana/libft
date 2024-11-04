@@ -6,7 +6,7 @@
 /*   By: samberna <samberna@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 19:02:04 by samberna          #+#    #+#             */
-/*   Updated: 2024/11/04 22:52:58 by samberna         ###   ########.fr       */
+/*   Updated: 2024/11/04 22:54:24 by samberna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ size_t  count_nb(int nb)
 char    *ft_itoa(int n)
 {
     char    *nbr;
-    int     i;
+    size_t  i;
 
     nbr = (char*)malloc(sizeof(char) * (count_nb(n) + 1));
     if (!nbr)
