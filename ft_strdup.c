@@ -27,6 +27,8 @@ char  *ft_strndup(const char *s, size_t sw)
   i = 0;
   len = ft_strlen(s);
   c = (char *)malloc(sizeof(char) * (len + 1));
+  if (!c)
+    return (NULL);
   while (i < len && i < sw)
   {
     c[i] = s[i];
