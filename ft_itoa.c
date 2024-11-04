@@ -6,7 +6,7 @@
 /*   By: samberna <samberna@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 19:02:04 by samberna          #+#    #+#             */
-/*   Updated: 2024/11/05 00:54:54 by samberna         ###   ########.fr       */
+/*   Updated: 2024/11/05 00:55:28 by samberna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,8 @@ char    *ft_itoa(int n)
     if (n == 0)
         return (ft_strdup("0"));
     dst = (char*)malloc(sizeof(char) * (nblen((long)n) + 1));
+    if (!dst)
+        return (NULL);
     nb = (long)n;
     if (nb < 0)
     {
