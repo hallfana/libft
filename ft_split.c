@@ -24,25 +24,25 @@ int ft_countwords(char const *s, int c)
   return (j);
 }
 
-char  **ft_split(char const *s, char c)
+char  **ft_split(char const *str, char c)
 {
   int     i;
   int     s;
   int     e;
   char**  dst;
 
-  dst = (char**)malloc(sizeof(char*) * (ft_countwords(s, (int)c) + 1));
+  dst = (char**)malloc(sizeof(char*) * (ft_countwords(str, (int)c) + 1));
   if (!dst)
     return (NULL);
   i = 0;
   s = 0;
   e = 0;
-  while (i < ft_countwords(s, (int)c))
+  while (i < ft_countwords(str, (int)c))
   {
-    while (s[s] == c)
+    while (str[s] == c)
       s++;
     e = s;
-    while (s[e] != c)
+    while (str[e] != c)
       e++;
     i++;
   }
