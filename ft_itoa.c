@@ -6,27 +6,25 @@
 /*   By: samberna <samberna@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 19:02:04 by samberna          #+#    #+#             */
-/*   Updated: 2024/11/04 23:02:12 by samberna         ###   ########.fr       */
+/*   Updated: 2024/11/04 23:02:50 by samberna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t  count_nb(int nb)
+size_t  count_nb(long long nb)
 {
     size_t      count;
-    long long   n;
 
     count = 0;
-    n = nb;
-    if (n < 0)
+    if (nb < 0)
     {
-        n *= -1;
+        nb *= -1;
         count++;
     }
-    while (n > 9)
+    while (nb > 9)
     {
-        n /= 10;
+        nb /= 10;
         count++;
     }
     return (count + 1);
