@@ -45,7 +45,7 @@ char  **ft_split(char const *str, char c)
     while (str[e] != c)
       e++;
     dst[i] = ft_strndup(str, e - s);
-    s = e;
+    s = e + 1;
     i++;
   }
   return (dst);
