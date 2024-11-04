@@ -6,7 +6,7 @@
 /*   By: samberna <samberna@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 19:02:04 by samberna          #+#    #+#             */
-/*   Updated: 2024/11/05 00:19:35 by samberna         ###   ########.fr       */
+/*   Updated: 2024/11/05 00:20:07 by samberna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,7 @@ char    *ft_itoa(int n)
     nr = n;
     if (nr < 0)
         nbr[0] = '-';
+    nbr[count_nb(nr) + 1] = '\0';
     //nbr[count_nb(nr)] = 'j';
     return (nbr);
 }
