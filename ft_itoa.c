@@ -6,7 +6,7 @@
 /*   By: samberna <samberna@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 19:02:04 by samberna          #+#    #+#             */
-/*   Updated: 2024/11/05 00:54:45 by samberna         ###   ########.fr       */
+/*   Updated: 2024/11/05 00:54:54 by samberna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ char    *ft_itoa(int n)
     i = nblen((long)n);
     while (nb > 0)
     {
-        printf("%c %d\n", (nb % 10) + '0', i - 1);
+        //printf("%c %d\n", (nb % 10) + '0', i - 1);
         dst[i - 1] = (nb % 10) + '0';
         nb /= 10;
         i--;
