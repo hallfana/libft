@@ -1,5 +1,5 @@
 #include "libft.h"
-#include <stdio.h>
+//#include <stdio.h>
 
 int ft_countwords(char const *s, int c) 
 {
@@ -46,10 +46,12 @@ char  **ft_split(char const *str, char c)
       e++;
     i++;
   }
+  return (dst);
 }
-
+/*
 int main(void)
 {
   ft_split("aaaaa6g4dab56g4aaa1b65tya14rty56bar14sd", 'a');
   return (0);
 }
+*/
