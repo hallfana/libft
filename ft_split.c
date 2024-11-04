@@ -36,13 +36,12 @@ char  **ft_split(char const *str, char c)
     return (NULL);
   i = 0;
   s = 0;
-  e = 0;
-  while (i < ft_countwords(str, (int)c))
+  while (str[s] && i < ft_countwords(str, (int)c))
   {
-    while (str[s] == c)
+    while (str[s] == c && str[s])
       s++;
-    e = s + 1;
-    while (str[e] != c)
+    e = s;
+    while (str[e] != c && str[e])
       e++;
     dst[i] = ft_strndup(str, e - s);
     s = e;
@@ -50,6 +49,7 @@ char  **ft_split(char const *str, char c)
   }
   return (dst);
 }
+
 /*
 int main(void)
 {
