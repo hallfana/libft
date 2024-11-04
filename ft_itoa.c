@@ -6,14 +6,14 @@
 /*   By: samberna <samberna@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 19:02:04 by samberna          #+#    #+#             */
-/*   Updated: 2024/11/05 00:20:07 by samberna         ###   ########.fr       */
+/*   Updated: 2024/11/05 00:22:35 by samberna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 
-int  count_nb(long long nb)
+int  count_nb(long  nb)
 {
     int      count;
 
@@ -33,9 +33,9 @@ int  count_nb(long long nb)
 
 char    *ft_itoa(int n)
 {
-    char        *nbr;
-    long long   i;
-    long long   nr;
+    char    *nbr;
+    long    i;
+    long    nr;
 
     //printf("count_nb: %d\n", count_nb(n));
     nr = n;
