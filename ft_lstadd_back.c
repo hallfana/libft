@@ -6,7 +6,7 @@
 /*   By: samberna <samberna@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 15:42:07 by samberna          #+#    #+#             */
-/*   Updated: 2024/11/05 15:45:17 by samberna         ###   ########.fr       */
+/*   Updated: 2024/11/05 15:45:43 by samberna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	if (!lst)
-		return (lst);
+		return ;
 	while ((*lst)->next)
 		lst = (*lst)->next;
 	(*lst)->next = new;
-	return (lst);
+	return ;
 }
