@@ -6,7 +6,7 @@
 /*   By: samberna <samberna@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 02:26:10 by samberna          #+#    #+#             */
-/*   Updated: 2024/11/05 02:32:44 by samberna         ###   ########.fr       */
+/*   Updated: 2024/11/05 02:33:31 by samberna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void    ft_putendl_fd(char *s, int fd)
         write(fd, *s, 1);
         s++;
     }
-    write(fd, '\n', 1);
+    write(fd, "\n", 1);
 }
 void    ft_putnbr_fd(int n, int fd)
 {
@@ -41,7 +41,7 @@ void    ft_putnbr_fd(int n, int fd)
     if (nb < 0)
     {
         nb *= -1;
-        write(fd, '-', 1);
+        write(fd, "-", 1);
     }
     if (nb < 10)
     {
