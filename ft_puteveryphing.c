@@ -6,7 +6,7 @@
 /*   By: samberna <samberna@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 02:26:10 by samberna          #+#    #+#             */
-/*   Updated: 2024/11/05 02:33:31 by samberna         ###   ########.fr       */
+/*   Updated: 2024/11/05 02:33:44 by samberna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void    ft_putstr_fd(char *s, int fd)
 {
     while (*s)
     {
-        write(fd, *s, 1);
+        write(fd, &*s, 1);
         s++;
     }
 }
@@ -28,7 +28,7 @@ void    ft_putendl_fd(char *s, int fd)
 {
     while (*s)
     {
-        write(fd, *s, 1);
+        write(fd, &*s, 1);
         s++;
     }
     write(fd, "\n", 1);
