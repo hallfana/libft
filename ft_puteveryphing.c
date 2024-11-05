@@ -6,7 +6,7 @@
 /*   By: samberna <samberna@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 02:26:10 by samberna          #+#    #+#             */
-/*   Updated: 2024/11/05 02:38:17 by samberna         ###   ########.fr       */
+/*   Updated: 2024/11/05 02:38:30 by samberna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ void    ft_putnbr_fd(int n, int fd)
     if (nb < 0)
     {
         nb *= -1;
-        ft_putchar_fd("-", fd);
+        ft_putchar_fd('-', fd);
     }
     if (nb < 10)
     {
