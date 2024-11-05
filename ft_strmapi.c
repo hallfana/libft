@@ -6,7 +6,7 @@
 /*   By: samberna <samberna@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 02:20:29 by samberna          #+#    #+#             */
-/*   Updated: 2024/11/05 02:23:43 by samberna         ###   ########.fr       */
+/*   Updated: 2024/11/05 02:23:59 by samberna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ char    *ft_strmapi(char const *s, char (*f)(unsigned int, char))
     while (i < (int)ft_strlen(s))
     {
         dst[i] = f(i, s[i]);
+        i++;
     }
     dst[i] = '\0';
     return (dst);
