@@ -6,7 +6,7 @@
 /*   By: samberna <samberna@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 16:32:17 by samberna          #+#    #+#             */
-/*   Updated: 2024/11/05 16:42:36 by samberna         ###   ########.fr       */
+/*   Updated: 2024/11/05 16:43:08 by samberna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	i = 0;
 	while (lst)
 	{
-		new_list->content = lst->content;
+		new_list->content = f(lst->content);
 		new_list->next = ft_lstnew("");
 		lst = lst->next;
 		i++;
