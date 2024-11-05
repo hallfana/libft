@@ -6,7 +6,7 @@
 /*   By: samberna <samberna@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 02:26:10 by samberna          #+#    #+#             */
-/*   Updated: 2024/11/05 02:33:44 by samberna         ###   ########.fr       */
+/*   Updated: 2024/11/05 02:35:47 by samberna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,6 @@ void    ft_putnbr_fd(int n, int fd)
         ft_putchar_fd((char) nb + '0', fd);
         return;
     }
-    ft_putnbr_fd(nb / 10, fd);
+    ft_putnbr_fd((int)(nb / 10), fd);
     ft_putchar_fd((char) nb % 10 + '0', fd);
 }
