@@ -6,7 +6,7 @@
 /*   By: samberna <samberna@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 16:32:17 by samberna          #+#    #+#             */
-/*   Updated: 2024/11/05 16:42:17 by samberna         ###   ########.fr       */
+/*   Updated: 2024/11/05 16:42:36 by samberna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*new_list;
 	size_t	i;
 
+	(void)del;
 	new_list = (t_list*)malloc(sizeof(t_list) * ft_lstsize(lst));
 	if (!new_list)
 		return (NULL);
