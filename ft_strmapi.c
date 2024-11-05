@@ -6,7 +6,7 @@
 /*   By: samberna <samberna@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 02:20:29 by samberna          #+#    #+#             */
-/*   Updated: 2024/11/05 02:23:29 by samberna         ###   ########.fr       */
+/*   Updated: 2024/11/05 02:23:43 by samberna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char    *ft_strmapi(char const *s, char (*f)(unsigned int, char))
     dst = (char *)malloc(sizeof(char) * (ft_strlen(s) + 1));
     if (!dst)
         return (NULL);
-    while (i < ft_strlen(s))
+    while (i < (int)ft_strlen(s))
     {
         dst[i] = f(i, s[i]);
     }
