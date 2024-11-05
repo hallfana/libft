@@ -6,7 +6,7 @@
 /*   By: samberna <samberna@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 16:32:17 by samberna          #+#    #+#             */
-/*   Updated: 2024/11/05 16:41:59 by samberna         ###   ########.fr       */
+/*   Updated: 2024/11/05 16:42:17 by samberna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,4 +28,5 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		lst = lst->next;
 		i++;
 	}
+	return (new_list);
 }
