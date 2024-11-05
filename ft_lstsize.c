@@ -6,7 +6,7 @@
 /*   By: samberna <samberna@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 15:31:13 by samberna          #+#    #+#             */
-/*   Updated: 2024/11/05 15:33:27 by samberna         ###   ########.fr       */
+/*   Updated: 2024/11/05 15:34:38 by samberna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_lstsize(t_list *lst)
 	size_t	i;
 
 	i = 0;
-	while (lst->next != NULL)
+	while (lst)
 	{
 		lst = lst->next;
 		i++;
