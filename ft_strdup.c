@@ -13,7 +13,7 @@ char  *ft_strdup(const char *s)
     return (NULL);
   while (i < len)
   {
-    c[i + 1] = s[i];
+    c[i] = s[i];
     i++;
   }
   c[i] = '\0';
