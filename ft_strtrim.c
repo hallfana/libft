@@ -6,7 +6,7 @@
 /*   By: samberna <samberna@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 17:12:28 by samberna          #+#    #+#             */
-/*   Updated: 2024/11/05 17:16:32 by samberna         ###   ########.fr       */
+/*   Updated: 2024/11/06 15:45:17 by samberna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,8 @@ char	*ft_strtrim(char const *s, char const *charset)
 	int	i;
 	int	j;
 
+	if (!s || !charset)
+		return (NULL);
 	i = -1;
 	j = (int)ft_strlen(s);
 	while (s[++i] && ft_incharset(s[i], charset) == 1)

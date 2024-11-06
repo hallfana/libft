@@ -6,7 +6,7 @@
 /*   By: samberna <samberna@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 17:23:32 by samberna          #+#    #+#             */
-/*   Updated: 2024/11/05 17:27:06 by samberna         ###   ########.fr       */
+/*   Updated: 2024/11/06 15:46:12 by samberna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,8 @@ char	**ft_split(char const *str, char c)
 	int		e;
 	char	**dst;
 
+	if (!str)
+		return (NULL);
 	dst = (char **)malloc(sizeof(char *) * (ft_countwords(str, (int)c) + 1));
 	if (!dst)
 		return (NULL);
