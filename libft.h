@@ -6,7 +6,7 @@
 /*   By: samberna <samberna@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 17:45:32 by samberna          #+#    #+#             */
-/*   Updated: 2024/11/05 21:55:17 by samberna         ###   ########.fr       */
+/*   Updated: 2024/11/06 13:40:23 by samberna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,7 @@
 
 # include <stdlib.h>
 # include <unistd.h>
-
-# define SIZE_MAX 18446744073709551615
+# include <sys/types.h>
 
 typedef struct s_list
 {

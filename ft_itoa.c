@@ -6,7 +6,7 @@
 /*   By: samberna <samberna@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 19:02:04 by samberna          #+#    #+#             */
-/*   Updated: 2024/11/05 17:39:52 by samberna         ###   ########.fr       */
+/*   Updated: 2024/11/06 13:39:48 by samberna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,10 +58,3 @@ char	*ft_itoa(int n)
 	dst[nblen((long)n)] = '\0';
 	return (dst);
 }
-
-/*#include <stdio.h>
-int main(int nigger, char** nigger_arr)
-{
-	printf("%s\n", ft_itoa(-1234));
-	return 0;
-}*/
