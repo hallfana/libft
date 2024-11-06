@@ -56,11 +56,11 @@ all : $(NAME)
 	@true
 
 $(NAME) :
-	gcc -I includes $(FLAGS) -c $(SRC)
+	gcc libft.h $(FLAGS) -c $(SRC)
 	ar rcs $(NAME) $(OBJ)
 
 bonus : clean
-	gcc -I includes $(FLAGS) -c $(SRC) $(BONUS)
+	gcc libft.h $(FLAGS) -c $(SRC) $(BONUS)
 	ar rcs $(NAME) $(OBJ_BONUS)
 
 clean : 
