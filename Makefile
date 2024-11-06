@@ -17,7 +17,7 @@ fclean : clean
 	rm -rf $(OBJ)
 
 dev:
-	make fclean;git add .; git commit -m 'auto update';git push;cd ../libft-unit-test; make b;cd ../libft; make fclean
+	make fclean;git add .; git commit -m 'auto update';git push;cd ../libft-unit-test; make f;cd ../libft; make fclean
 
 re : fclean all
 
