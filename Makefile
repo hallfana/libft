@@ -70,7 +70,3 @@ fclean : clean
 	rm -rf $(OBJ) $(OBJ_BONUS)
 
 re : fclean all
-
-so:
-	$(CC) -nostartfiles -fPIC $(CFLAGS) $(BONUS)
-	gcc -nostartfiles -shared -o libft.so $(OBJ_BONUS)
