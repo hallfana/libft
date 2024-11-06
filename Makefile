@@ -50,7 +50,7 @@ OBJ = $(SRC:.c=.o)
 OBJ_BONUS = $(SRC:.c=.o) $(BONUS:.c=.o)
 FLAGS = -Wall -Wextra -Werror
 
-.PHONY: all clean fclean re dev bonus
+.PHONY: all clean fclean re dev bonus so
 
 all : $(NAME)
 	@true
@@ -73,3 +73,7 @@ re : fclean all
 
 dev:
 	make fclean;git add .; git commit -m 'auto update';git push;cd ../libft-unit-test; make f;cd ../libft; make fclean
+
+so:
+	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRC)
+	gcc -nostartfiles -shared -o libft.so $(OBJ)
