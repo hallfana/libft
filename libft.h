@@ -6,7 +6,7 @@
 /*   By: samberna <samberna@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 17:45:32 by samberna          #+#    #+#             */
-/*   Updated: 2024/11/07 16:56:05 by samberna         ###   ########.fr       */
+/*   Updated: 2024/11/07 17:31:40 by samberna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,5 +67,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void*));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 int		ft_incharset(const int c, const char *charset);
+char	**ft_split(char const *str, char c);
+void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 
 #endif
